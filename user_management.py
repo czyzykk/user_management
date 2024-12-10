@@ -48,7 +48,6 @@ def remov_user(user_id):
 
 def load_users():
     if not os.path.exists('data/users.json'):
-        save_users([])
         return []
     
     with open('data/users.json', 'r', encoding='utf-8') as file:
