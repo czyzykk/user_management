@@ -4,11 +4,11 @@ import re
 import os
 from datetime import datetime
 
-def add_user():
+def add_user()
     user_data = {}
 
     user_data['id'] = int(input("Podaj ID użytkownika: "))
-    user_data['name'] = input("Podaj imię i nazwisko użytkownika: ")
+    user_data['name'] = input("Podaj imię i nazwisko użytkownika: "
     user_data['nip'] = input("Podaj numer NIP: ")
     user_data['pesel'] = input("Podaj numer PESEL: ")
     user_data['regon'] = input("Podaj numer REGON: ")
@@ -114,23 +114,23 @@ def validate_password(password):
         return False
     if not re.search(r'[0-9]', password):
         return False
-    if not re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
+    if nt re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
         return False
     return True
   
 if __name__ == "__main__":
-    print("Wybierz akcję:")
+    print("Wybierz akcję, której chcesz użyć:")
     print("1. Dodaj użytkownika")
     print("2. Edytuj użytkownika")
     print("3. Usuń użytkownika")
 
-    choice = input("Wybierz numer akcji: ")
+    choice = input("Wybierz numer akcji, krórej chcesz użyć: ")
 
     if choice == "1":
         print(add_user()) 
     elif choice == "2":
         user_id = int(input("Podaj ID użytkownika do edycji: "))
-        updated_data = {
+        update_data = {
             'name': input("Podaj nowe imię i nazwisko użytkownika: "),
             'email': input("Podaj nowy adres email: ")
         }
