@@ -38,7 +38,7 @@ def edit_user(user_id, updated_data):
     save_users(users)
     return "Dane użytkownika zostały zaktualizowane"
 
-def remove_user(user_id):
+def remov_user(user_id):
     users = load_users()
     
     users = [user for user in users if user['id'] != user_id]
